@@ -1,0 +1,16 @@
+{
+  "origin": "https://photos.example.invalid",
+  "port": 8787,
+  "data": "/volume1/photo-sync/state",
+  "allowedRoots": ["/volume1/photo-import"],
+  "cameraNetworks": [],
+  "pushSubject": "mailto:operator@example.invalid",
+  "oidc": {
+    "issuer": "https://sso.example.invalid",
+    "clientId": "canon-photo-sync",
+    "subjects": ["replace-with-stable-oidc-subject"],
+    "groups": [],
+    "pkce": true
+  },
+  "settings": { "destination": "/volume1/photo-import" }
+}

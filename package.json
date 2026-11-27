@@ -1,0 +1,36 @@
+{
+  "name": "canon-photo-sync",
+  "version": "0.1.0",
+  "description": "Local Canon camera synchronization daemon and PWA",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "tsc",
+    "lint": "tsc --noEmit && node --check public/app.js && node --check public/sw.js",
+    "start": "node dist/main.js",
+    "dev": "node --watch dist/main.js",
+    "doctor": "node dist/main.js doctor",
+    "simulate": "node test/demo.mjs",
+    "backup": "node dist/main.js backup",
+    "test:browser": "node test/browser.mjs"
+  },
+  "type": "module",
+  "engines": {
+    "node": "^20.19 || >=22.13"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "@types/web-push": "^3.6.4",
+    "playwright-core": "^1.65.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "ipaddr.js": "^2.5.0",
+    "openid-client": "^6.9.1",
+    "web-push": "^4.0.0",
+    "zod": "^4.6.7"
+  },
+  "optionalDependencies": {
+    "libsql": "^0.5.29"
+  }
+}

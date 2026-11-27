@@ -1,0 +1,1 @@
+Use strict TypeScript and run build, lint and tests before handoff. Keep camera operations read-only. Keep production OIDC mandatory and keep simulator routes isolated. Never commit runtime data, credentials or camera samples.
